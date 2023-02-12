@@ -15,6 +15,20 @@ public class Client {
 
     private String adresse ;
 
+    public Client(Long id, String email, String nom, String prenom, String adresse, int codePostal, String ville, String tel, String passwd) {
+        this.id = id;
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.codePostal = codePostal;
+        this.ville = ville;
+        this.tel = tel;
+        this.passwd = passwd;
+    }
+
+    public Client(){}
+
     private int codePostal ;
 
     private  String ville ;

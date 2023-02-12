@@ -3,7 +3,7 @@ package com.example.microprojet.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.List;
+import java.util.Set;
 
 public interface Repo <E>{
 
@@ -20,7 +20,7 @@ public interface Repo <E>{
 
     E find(Long id);
 
-    List<E> findAll();
+    Set<E> findAll();
 
     void add(E obj);
 

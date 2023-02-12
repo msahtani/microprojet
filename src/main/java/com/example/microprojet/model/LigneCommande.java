@@ -1,6 +1,5 @@
 package com.example.microprojet.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LigneCommande {
@@ -9,7 +8,7 @@ public class LigneCommande {
 
     private Long codeArticle ;
 
-    private double qteCmd ;
+    private int qteCmd ;
 
     private Commande commande ;
     private List<Article>  articles ;
@@ -46,11 +45,11 @@ public class LigneCommande {
         this.codeArticle = codeArticle;
     }
 
-    public double getQteCmd() {
+    public int getQteCmd() {
         return qteCmd;
     }
 
-    public void setQteCmd(double qteCmd) {
+    public void setQteCmd(int qteCmd) {
         this.qteCmd = qteCmd;
     }
 }
